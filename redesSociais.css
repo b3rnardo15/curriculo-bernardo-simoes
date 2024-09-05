@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #3b2772;  /* Cor de fundo */
+    background-color: #3b2772; /* Cor de fundo */
     margin: 0;
     padding: 0;
     display: flex;
@@ -9,23 +9,23 @@ body {
     height: 100vh;
 }
 
-/* Contêiner principal que mantém as redes sociais e o espaço para a imagem */
+/* Container principal com Bootstrap */
 .social-container {
-    width: 60%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 60%;
     position: relative;
 }
 
-/* Colunas das redes sociais à esquerda e à direita */
+/* Estilo das colunas das redes sociais */
 .social-left, .social-right {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
-
+/* Estilo dos ícones sociais */
 .social-icon {
     text-decoration: none;
     color: white;
@@ -36,7 +36,7 @@ body {
     transition: background-color 0.3s ease;
 }
 
-
+/* Estilos específicos dos ícones sociais */
 .instagram {
     background-color: #E1306C;
 }
@@ -62,32 +62,27 @@ body {
 }
 
 .whatsapp {
-    background-color: #065329;
+    background-color: #25D366;
 }
 
 .whatsapp:hover {
-    background-color: #065329b9;
+    background-color: #128C7E;
 }
 
 /* Espaço centralizado para a imagem */
 .center-image {
-    position: absolute;
-    left: 38%;
-    transform: translateX(-50%);
-    top: 50%;
-    transform: translateY(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
     z-index: 1; /* Garante que a imagem fique acima do plano de fundo, mas abaixo dos links */
-    width: 207px; /* Ajuste conforme necessário */
-    height: 240px; /* Ajuste conforme necessário */
-    border-radius: 0%;
-    overflow: hidden;
 }
 
 .central-img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    max-width: 100%;
+    height: auto;
 }
+
 /* Estilo do botão de voltar */
 .back-button {
     position: absolute;
@@ -109,4 +104,5 @@ body {
     background-color: #2c1b5c;
     color: #ffffff;
 }
+
 
